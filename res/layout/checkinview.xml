@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/cv_checkinview"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<LinearLayout android:id="@+id/cv_widget30"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true">
+		<TextView android:id="@+id/cv_name" android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="17sp">
+		</TextView>
+		<TextView android:id="@+id/cv_phone" android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+		</TextView>
+		<TextView android:id="@+id/cv_address" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+		</TextView>
+		<ImageView android:id="@+id/cv_stars" android:layout_width="wrap_content"
+			android:layout_height="29px">
+		</ImageView>
+			
+		<ImageButton android:id="@+id/cv_yelpreviews" android:layout_width="wrap_content" android:background="@android:color/transparent"
+			android:layout_height="wrap_content" android:src="@drawable/yelpreviewsred">
+		</ImageButton>
+
+	</LinearLayout>
+	<ImageView android:id="@+id/cv_picture" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_alignParentTop="true" android:background="@color/light"
+		android:layout_alignRight="@id/cv_widget30" android:layout_alignParentRight="true"
+			android:padding="5px">
+	</ImageView>
+	<Button android:id="@+id/cv_checkinbtn" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="Check In Here!"
+		android:layout_below="@id/cv_widget30">
+	</Button>
+	<LinearLayout android:id="@+id/cv_divider" android:layout_below="@id/cv_checkinbtn"
+		android:layout_width="fill_parent" android:background="@color/light"
+		android:layout_height="5dp" android:orientation="vertical">
+	</LinearLayout>
+	<ListView android:id="@+id/cv_nearbylist"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:paddingTop="10px"
+		android:layout_below="@id/cv_divider">
+	</ListView>
+</RelativeLayout>

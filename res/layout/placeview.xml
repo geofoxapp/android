@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/uc_wrapper"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@color/end_grad">
+	<LinearLayout android:id="@+id/pv_placeview"
+		android:layout_width="fill_parent" android:orientation="vertical"
+		android:layout_height="fill_parent"
+		android:paddingRight="3dp"
+		android:paddingLeft="3dp"
+		android:paddingTop="6dp"
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_gravity="center_horizontal">
+
+		<!--  begin frame for title -->
+		<FrameLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/simple_border"
+			android:padding="4dp"
+			>
+			<TextView android:id="@+id/pv_name" android:layout_width="280dp"
+				android:layout_height="wrap_content" android:background="@color/start_grad"
+				android:textStyle="bold"
+				android:textColor="@color/textHeadingsBg" android:textSize="@dimen/headingTextSize"
+				android:text="Frank's Restaurant"
+				android:typeface="sans"
+				android:padding="10dp"
+				android:layout_centerHorizontal="true">
+			</TextView>
+		</FrameLayout><!--  end the title -->
+			
+			<LinearLayout 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:gravity="center_vertical"
+			>
+			<FrameLayout android:id="@+id/widget48"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@drawable/simple_border"
+				android:layout_marginTop="10dp"
+				android:layout_marginBottom="3dp"
+				android:padding="3dp"
+				>
+				<!-- begin vertical layout for the rating -->
+				<LinearLayout android:id="@+id/widget48"
+					android:orientation="vertical"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="0dp"
+					android:gravity="center_horizontal"
+				>
+					
+					<FrameLayout
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:paddingRight="2dp" android:paddingLeft="2dp" android:background="@color/textHeadingsBg"
+						>
+						<LinearLayout android:layout_width="fill_parent" 
+						android:gravity="center_vertical"
+						android:layout_height="fill_parent">
+									
+						<ImageView android:id="@+id/pv_yelp_logo"
+							android:src="@drawable/yelp_logo_75x38"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							>
+						</ImageView>
+					
+						<TextView android:id="@+id/pv_visitslbl"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:text="  rating "
+							android:textColor="@color/textHeadings" android:textSize="@dimen/headingTextSize">
+						</TextView>
+						
+						</LinearLayout>
+					</FrameLayout>
+
+															
+					<FrameLayout
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:padding="5dp"
+						>
+						<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" >
+						<ImageView android:id="@+id/pv_stars"
+							android:layout_width="wrap_content" android:layout_height="29px"
+							>
+						</ImageView>
+						<TextView android:id="@+id/pv_rating_count"
+							android:layout_width="wrap_content"
+							 android:layout_height="wrap_content"
+							android:typeface="sans"
+							android:layout_marginRight="4dp"
+							android:paddingTop="2dp"
+							android:layout_alignParentBottom="true"
+							>
+						</TextView>
+						</LinearLayout>						
+					</FrameLayout>
+						
+						<Button android:id="@+id/pv_yelpreviewlink"
+							android:layout_width="fill_parent" android:layout_height="wrap_content"
+							android:text="Open Yelp Reviews" android:layout_gravity="center"
+							android:layout_marginLeft="10dp"
+							android:layout_marginRight="10dp">
+						</Button>
+					
+				</LinearLayout>	<!--  end vertical layout for label and visit number box-->
+			</FrameLayout><!--  end frame for visited containing the border -->
+
+			<!--  begin frame for picture -->
+			<FrameLayout android:id="@+id/widget48"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@drawable/simple_border"
+				android:layout_marginLeft="15dp"
+				android:layout_marginTop="10dp"
+				android:padding="3dp"
+				>
+				<ImageView android:id="@+id/pv_picture"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_alignParentTop="true"
+					android:layout_alignParentRight="true" android:background="@color/start_grad"
+					android:padding="3px">
+				</ImageView>
+			</FrameLayout>
+		</LinearLayout><!-- end horizontal wrapper for ratings+picture -->	
+		
+
+
+		
+			<!--  begin frame for address -->
+			<FrameLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:background="@drawable/simple_border"
+					android:layout_marginTop="10dp"
+					android:layout_marginBottom="10dp"
+					android:padding="3dp"
+					android:layout_gravity="right"
+					>
+				<LinearLayout 
+					android:layout_width="220dp"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					android:padding="1dp"
+					 
+				>
+					<FrameLayout
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:background="@color/textHeadingsBg" android:paddingRight="0dp" android:paddingLeft="0dp"
+						>
+						<TextView android:id="@+id/pv_actionslbl"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:text=" Location "
+							android:textColor="@color/textHeadings" android:textSize="@dimen/headingTextSize">
+						</TextView>
+					</FrameLayout>
+					<TextView android:id="@+id/pv_address" android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center" android:text="14982 Cameron Dr. \n Ann Arbor, MI 48104" android:textSize="18sp">
+					</TextView>
+					<LinearLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+						<TextView android:id="@+id/pv_distancelbl" android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_gravity="center" android:text="Distance:  ">
+						</TextView>
+						<TextView android:id="@+id/pv_distanceAway" android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_gravity="center">
+						</TextView>
+					</LinearLayout><!-- "distance: " plus textview -->					
+				</LinearLayout><!--  vertical layout for address box -->
+			</FrameLayout><!--  address box/borer -->
+
+
+
+			<!--  begin layout for call button and phone number -->
+			<FrameLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@drawable/simple_border"
+				android:layout_gravity="left"
+				android:layout_marginBottom="4dp"
+				>
+				<LinearLayout
+					android:layout_width="230dp"
+					android:layout_height="wrap_content"
+					android:orientation="vertical" 
+					android:layout_gravity="left"
+					android:padding="3dp"			
+					>
+
+					<FrameLayout
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:background="@color/textHeadingsBg" android:paddingRight="3dp" android:paddingLeft="3dp"
+						>
+						<TextView android:id="@+id/pv_phonelbl"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:text="Phone"
+							android:textColor="@color/textHeadings" android:textSize="@dimen/headingTextSize">
+						</TextView>
+					</FrameLayout>
+
+						<LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent">
+							<ImageButton android:id="@+id/clicktocallbtn"
+								android:src="@drawable/telbutton"
+								android:layout_width="wrap_content" android:layout_height="wrap_content">
+							</ImageButton>
+							<TextView android:id="@+id/pv_phone" android:layout_width="fill_parent"
+								android:layout_height="wrap_content" android:text="(555) 555-5555"
+								style="heading_text" android:textSize="@dimen/phoneTextSize" 
+								android:gravity="center">
+							</TextView>
+						</LinearLayout>
+				</LinearLayout> <!--  end vertical lyout for phone -->
+			</FrameLayout><!-- end framed layout for phone (border)-->
+			
+			
+			
+			
+			<!-- begin vertical layout for the visited -->
+			<FrameLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@drawable/simple_border"
+				android:layout_gravity="right"
+			>
+				<LinearLayout
+					android:orientation="vertical"
+					android:layout_width="180dp"
+					android:layout_height="wrap_content"
+					android:padding="3dp"
+					>
+					<!--    Here we can put another box; this is the visited -->
+					<FrameLayout
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:background="@color/textHeadingsBg" android:paddingRight="5dp" android:paddingLeft="5dp"
+						>
+						<TextView android:id="@+id/pv_visitslbl"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:text="Visits" android:layout_gravity="right" 
+							android:textColor="@color/textHeadings" android:textSize="@dimen/headingTextSize">
+						</TextView>
+					</FrameLayout>
+					<FrameLayout
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:padding="3dp"
+						>
+						<TextView android:id="@+id/pv_numvisits"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:textColor="@color/textHeadings" android:layout_gravity="right"
+							android:textSize="@dimen/headingTextSize" android:text="444">
+						</TextView>
+					</FrameLayout>
+				</LinearLayout>	<!--  end vertical layout for label and visit number box-->
+			</FrameLayout><!--  end frame for visited containing the border -->					
+						
+			<!--  begin frame wrapper for 'actions' box -->
+			<FrameLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/simple_border"
+			android:padding="2dp"
+			android:paddingRight="7dp"
+			android:layout_marginRight="3dp"
+			android:layout_marginTop="8dp"
+			android:layout_marginBottom="5dp"
+			android:layout_gravity="left"
+			>
+			<LinearLayout
+				android:layout_width="200dp"
+				android:layout_height="wrap_content"
+				android:orientation="vertical" 
+				android:layout_gravity="center"
+			>
+					<FrameLayout
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:background="@color/textHeadingsBg" android:paddingRight="3dp" android:paddingLeft="3dp"
+						>
+						<TextView android:id="@+id/pv_actionslbl"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:text="Actions " android:layout_gravity="left" 
+							android:textColor="@color/textHeadings" android:textSize="@dimen/headingTextSize">
+						</TextView>
+					</FrameLayout>
+					
+				<Button android:id="@+id/morelikebutton" android:text="More Like This" android:layout_marginTop="5dp"
+					android:layout_width="150dp" android:layout_height="wrap_content" android:layout_gravity="center_horizontal">
+				</Button>
+			</LinearLayout>
+			</FrameLayout>
+			
+			
+	</LinearLayout> <!--  end place view -->
+</ScrollView>

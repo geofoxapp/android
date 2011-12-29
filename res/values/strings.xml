@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">GeoFOX</string>
+	<color name="dropShadow">#5a595a</color>
+	<color name="textHeadings">#35425d</color><!--  13283a iphone -->
+	<color name="textHeadingsBg">#ffffff</color><!--  #cbcbcb -->
+	<color name="darkerBg">#b0c3fe</color><!--  #999999 -->
+	<color name="lighterBg">#c4d2fd</color><!--  CCCCCC -->
+	<color name="light">#CCCCCC</color>
+	<color name="pageBg">#ededed</color>
+	
+	<color name="titleColor">#35425d</color>
+	<color name="titleBackground">#cecfce</color>
+	
+	<!-- the next two define the colors use in the simple_border shape -->
+	<color name="start_grad">#47587b</color>
+	<color name="end_grad">#ededed</color>
+	
+	<!--  begin some values for different blue hues -->
+	<color name="hue1">#aed1ff</color>
+	<color name="hue2">#d2e6ff</color>
+	<!--  different shade	 -->
+	<color name="hue3">#c4d2fd</color>
+	<color name="hue4">#b0c3fe</color>
+	<color name="hue5">#aeb4c8</color>
+	<!--  dark gray green -->
+	<color name="hue6">#809394</color>
+	<color name="hue7">#d5e8e9</color>
+	<color name="lightdarkblue">#6083ad</color>
+		
+	
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent" >
+	
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/topbar"
+		android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@color/light">
+
+		<ImageView android:id="@+id/yl_yelplogo"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+			android:src="@drawable/yelp_logo_white_larger">
+		</ImageView>
+		
+		<TextView android:id="@+id/yl_title" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_alignBottom="@id/yl_yelplogo"
+			android:layout_centerHorizontal="true" android:textColor="@color/titleColor" >
+		</TextView>
+	
+		<Button android:id="@+id/yl_switchbtn" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="View Map"
+			android:layout_alignParentRight="true">
+		</Button>
+		
+		<Button android:id="@+id/yl_sortbtn" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:text="Sort By Most Visited"
+			android:layout_below="@id/yl_switchbtn">
+		</Button>
+		
+		
+	</RelativeLayout>
+
+	<ListView android:id="@+id/lview" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:layout_below="@id/topbar">
+	</ListView>
+</RelativeLayout>
+
+
+

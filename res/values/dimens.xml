@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+       <dimen name="dropShadowRight">3px</dimen>
+       <dimen name="dropShadowBottom">3px</dimen>
+       <dimen name="headingTextSize">27sp</dimen>
+       <dimen name="smallerTextSize">18sp</dimen>
+       <dimen name="phoneTextSize">22sp</dimen>  
+       <dimen name="headingBoxSize">26dp</dimen>
+       <dimen name="yltopheight">45px</dimen>
+       <dimen name="ylbottomheight">20px</dimen>
+       <dimen name="yltotalheight">65px</dimen>
+       <dimen name="yl_textSize">18sp</dimen>
+</resources>
